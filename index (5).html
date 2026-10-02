@@ -1,0 +1,1037 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>🩷 El Mundo de los Ajolotes</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="hero">
+
+        <div class="hero-content">
+
+            <span class="badge">
+                🫧 MUNDO AJOLOTE
+            </span>
+
+            <h1>
+                El Mundo de los Ajolotes
+            </h1>
+
+            <p>
+                Conocé las diferentes especies de ajolotes,
+                sus características, hábitats y curiosidades.
+            </p>
+
+            <a href="#especies" class="btn">
+                Explorar especies 🩷
+            </a>
+
+        </div>
+
+        <div class="hero-axolotl">
+            🦎
+        </div>
+
+    </header>
+
+
+    <!-- ================= MENU ================= -->
+
+    <nav class="navbar">
+
+        <a href="#inicio">
+            Inicio
+        </a>
+
+        <a href="#especies">
+            Especies
+        </a>
+
+        <a href="#datos">
+            Datos curiosos
+        </a>
+
+        <button id="modoBtn">
+            🌙 Modo noche
+        </button>
+
+    </nav>
+
+
+    <main id="inicio">
+
+
+        <!-- ================= INTRODUCCION ================= -->
+
+        <section class="section intro">
+
+            <div>
+
+                <span class="section-tag">
+                    🌸 CONOCIENDO A LOS AJOLOTES
+                </span>
+
+                <h2>
+                    Pequeños anfibios, enorme historia
+                </h2>
+
+                <p>
+                    Los ajolotes pertenecen al género
+                    <strong>Ambystoma</strong>.
+                    Son anfibios relacionados con las salamandras
+                    y muchas de sus especies son originarias de México.
+                </p>
+
+                <p>
+                    El ajolote mexicano, cuyo nombre científico es
+                    <em>Ambystoma mexicanum</em>, es probablemente
+                    la especie más conocida.
+                </p>
+
+            </div>
+
+
+            <div class="fact-box">
+
+                <span>
+                    💡
+                </span>
+
+                <h3>
+                    ¿Sabías que?
+                </h3>
+
+                <p>
+                    El nombre "ajolote" se utiliza para varias especies
+                    del género Ambystoma. No todos los ajolotes son
+                    exactamente iguales.
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= ESPECIES ================= -->
+
+        <section id="especies" class="section">
+
+            <div class="section-heading">
+
+                <span class="section-tag">
+                    🦎 LAS 17 ESPECIES
+                </span>
+
+                <h2>
+                    Conocé cada una
+                </h2>
+
+                <p>
+                    Buscá una especie o utilizá el filtro para encontrarla.
+                </p>
+
+            </div>
+
+
+            <!-- BUSCADOR -->
+
+            <div class="filters">
+
+                <input
+                    id="buscador"
+                    type="search"
+                    placeholder="🔎 Buscar especie..."
+                >
+
+                <select id="filtroEstado">
+
+                    <option value="todos">
+                        Todas las especies
+                    </option>
+
+                    <option value="mexico">
+                        Especies mexicanas
+                    </option>
+
+                    <option value="lago">
+                        Asociadas a lagos
+                    </option>
+
+                    <option value="arroyo">
+                        Asociadas a arroyos
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div id="contador" class="contador">
+                17 especies
+            </div>
+
+
+            <!-- ================= TARJETAS ================= -->
+
+            <div id="gridEspecies" class="species-grid">
+
+
+                <!-- 1 -->
+
+                <article
+                    class="species-card"
+                    data-name="Ajolote de arroyo de montaña"
+                    data-scientific="Ambystoma altamirani"
+                    data-habitat="arroyo mexico"
+                >
+
+                    <div class="image-wrap">
+
+                        <img
+                            data-wiki="Ambystoma altamirani"
+                            alt="Ajolote Ambystoma altamirani"
+                        >
+
+                        <span class="number">
+                            01
+                        </span>
+
+                    </div>
+
+                    <div class="card-body">
+
+                        <span class="common">
+                            Ajolote de arroyo de montaña
+                        </span>
+
+                        <h3>
+                            <em>
+                                Ambystoma altamirani
+                            </em>
+                        </h3>
+
+                        <p>
+                            Especie de ajolote de montaña asociada a
+                            arroyos y cuerpos de agua de zonas altas
+                            del centro de México.
+                        </p>
+
+                        <div class="meta">
+                            📍 México
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- 2 -->
+
+                <article
+                    class="species-card"
+                    data-name="Ajolote de cabeza chata"
+                    data-scientific="Ambystoma amblycephalum"
+                    data-habitat="mexico"
+                >
+
+                    <div class="image-wrap">
+
+                        <img
+                            data-wiki="Ambystoma amblycephalum"
+                            alt="Ambystoma amblycephalum"
+                        >
+
+                        <span class="number">
+                            02
+                        </span>
+
+                    </div>
+
+                    <div class="card-body">
+
+                        <span class="common">
+                            Ajolote de cabeza chata
+                        </span>
+
+                        <h3>
+                            <em>
+                                Ambystoma amblycephalum
+                            </em>
+                        </h3>
+
+                        <p>
+                            Especie mexicana de distribución muy
+                            restringida y conocida por su cabeza
+                            relativamente ancha.
+                        </p>
+
+                        <div class="meta">
+                            📍 Michoacán
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- 3 -->
+
+                <article
+                    class="species-card"
+                    data-name="Achoque de Zacapu"
+                    data-scientific="Ambystoma andersoni"
+                    data-habitat="lago mexico"
+                >
+
+                    <div class="image-wrap">
+
+                        <img
+                            data-wiki="Ambystoma andersoni"
+                            alt="Ambystoma andersoni"
+                        >
+
+                        <span class="number">
+                            03
+                        </span>
+
+                    </div>
+
+                    <div class="card-body">
+
+                        <span class="common">
+                            Achoque de Zacapu
+                        </span>
+
+                        <h3>
+                            <em>
+                                Ambystoma andersoni
+                            </em>
+                        </h3>
+
+                        <p>
+                            Ajolote acuático que conserva características
+                            larvarias durante la adultez y está relacionado
+                            con ambientes lacustres.
+                        </p>
+
+                        <div class="meta">
+                            📍 Zacapu, Michoacán
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- 4 -->
+
+               
+                <!-- 5 -->
+
+                <article
+                    class="species-card"
+                    data-name="Achoque de Pátzcuaro"
+                    data-scientific="Ambystoma dumerilii"
+                    data-habitat="lago mexico"
+                >
+
+                    <div class="image-wrap">
+
+                        <img
+                            data-wiki="Ambystoma dumerilii"
+                            alt="Ambystoma dumerilii"
+                        >
+
+                        <span class="number">
+                            05
+                        </span>
+
+                    </div>
+
+                    <div class="card-body">
+
+                        <span class="common">
+                            Achoque de Pátzcuaro
+                        </span>
+
+                        <h3>
+                            <em>
+                                Ambystoma dumerilii
+                            </em>
+                        </h3>
+
+                        <p>
+                            Ajolote acuático y neoténico asociado al
+                            Lago de Pátzcuaro.
+                        </p>
+
+                        <div class="meta">
+                            📍 Pátzcuaro, Michoacán
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- 6 -->
+
+                <article
+                    class="species-card"
+                    data-name="Ajolote de Chapala"
+                    data-scientific="Ambystoma flavipiperatum"
+                    data-habitat="arroyo mexico"
+                >
+
+                    <div class="image-wrap">
+
+                        <img
+                            data-wiki="Ambystoma flavipiperatum"
+                            alt="Ambystoma flavipiperatum"
+                        >
+
+                        <span class="number">
+                            06
+                        </span>
+
+                    </div>
+
+                    <div class="card-body">
+
+                        <span class="common">
+                            Ajolote de Chapala
+                        </span>
+
+                        <h3>
+                            <em>
+                                Ambystoma flavipiperatum
+                            </em>
+                        </h3>
+
+                        <p>
+                            Especie de distribución muy localizada
+                            relacionada con ambientes de montaña.
+                        </p>
+
+                        <div class="meta">
+                            📍 Jalisco
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- 7 -->
+
+                <article
+                    class="species-card"
+                    data-name="Ajolote de Toluca"
+                    data-scientific="Ambystoma granulosum"
+                    data-habitat="lago mexico"
+                >
+
+                    <div class="image-wrap">
+
+                        <img
+                            data-wiki="Ambystoma granulosum"
+                            alt="Ambystoma granulosum"
+                        >
+
+                        <span class="number">
+                            07
+                        </span>
+
+                    </div>
+
+                    <div class="card-body">
+
+                        <span class="common">
+                            Ajolote de Toluca
+                        </span>
+
+                        <h3>
+                            <em>
+                                Ambystoma granulosum
+                            </em>
+                        </h3>
+
+                        <p>
+                            Ajolote de distribución reducida en el
+                            Estado de México.
+                        </p>
+
+                        <div class="meta">
+                            📍 Toluca
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- 8 -->
+
+                <article
+                    class="species-card"
+                    data-name="Ajolote de Río Frío"
+                    data-scientific="Ambystoma leorae"
+                    data-habitat="arroyo mexico"
+                >
+
+                    <div class="image-wrap">
+
+                        <img
+                            data-wiki="Ambystoma leorae"
+                            alt="Ambystoma leorae"
+                        >
+
+                        <span class="number">
+                            08
+                        </span>
+
+                    </div>
+
+                    <div class="card-body">
+
+                        <span class="common">
+                            Ajolote de Río Frío
+                        </span>
+
+                        <h3>
+                            <em>
+                                Ambystoma leorae
+                            </em>
+                        </h3>
+
+                        <p>
+                            Especie arroyera de montaña con una
+                            distribución muy limitada.
+                        </p>
+
+                        <div class="meta">
+                            📍 México
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- 9 -->
+
+                <article
+                    class="species-card"
+                    data-name="Ajolote de Lerma"
+                    data-scientific="Ambystoma lermaense"
+                    data-habitat="lago mexico"
+                >
+
+                    <div class="image-wrap">
+
+                        <img
+                            data-wiki="Ambystoma lermaense"
+                            alt="Ambystoma lermaense"
+                        >
+
+                        <span class="number">
+                            09
+                        </span>
+
+                    </div>
+
+                    <div class="card-body">
+
+                        <span class="common">
+                            Ajolote de Lerma
+                        </span>
+
+                        <h3>
+                            <em>
+                                Ambystoma lermaense
+                            </em>
+                        </h3>
+
+                        <p>
+                            Ajolote relacionado históricamente con
+                            humedales y cuerpos de agua del Valle
+                            de Lerma.
+                        </p>
+
+                        <div class="meta">
+                            📍 Valle de Lerma
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- 10 -->
+
+                <article
+                    class="species-card"
+                    data-name="Ajolote tigre rayado"
+                    data-scientific="Ambystoma mavortium"
+                    data-habitat="mexico"
+                >
+
+                    <div class="image-wrap">
+
+                        <img
+                            data-wiki="Ambystoma mavortium"
+                            alt="Ambystoma mavortium"
+                        >
+
+                        <span class="number">
+                            10
+                        </span>
+
+                    </div>
+
+                    <div class="card-body">
+
+                        <span class="common">
+                            Ajolote tigre rayado
+                        </span>
+
+                        <h3>
+                            <em>
+                                Ambystoma mavortium
+                            </em>
+                        </h3>
+
+                        <p>
+                            Salamandra tigre de Norteamérica que
+                            también presenta poblaciones en zonas
+                            del territorio mexicano.
+                        </p>
+
+                        <div class="meta">
+                            📍 Norteamérica
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- 11 -->
+
+                <article
+                    class="species-card"
+                    data-name="Ajolote mexicano de Xochimilco"
+                    data-scientific="Ambystoma mexicanum"
+                    data-habitat="lago mexico"
+                >
+
+                    <div class="image-wrap">
+
+                        <img
+                            data-wiki="Ambystoma mexicanum"
+                            alt="Ambystoma mexicanum"
+                        >
+
+                        <span class="number">
+                            11
+                        </span>
+
+                    </div>
+
+                    <div class="card-body">
+
+                        <span class="common">
+                            Ajolote mexicano
+                        </span>
+
+                        <h3>
+                            <em>
+                                Ambystoma mexicanum
+                            </em>
+                        </h3>
+
+                        <p>
+                            Es la especie de ajolote más conocida.
+                            Conserva branquias externas y características
+                            juveniles durante la adultez.
+                        </p>
+
+                        <div class="meta">
+                            📍 Xochimilco, México
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- 12 -->
+
+                
+
+                <!-- 13 -->
+
+                <article
+                    class="species-card"
+                    data-name="Ajolote arroyero de Michoacán"
+                    data-scientific="Ambystoma rivulare"
+                    data-habitat="arroyo mexico"
+                >
+
+                    <div class="image-wrap">
+
+                        <img
+                            data-wiki="Ambystoma rivulare"
+                            alt="Ambystoma rivulare"
+                        >
+
+                        <span class="number">
+                            13
+                        </span>
+
+                    </div>
+
+                    <div class="card-body">
+
+                        <span class="common">
+                            Ajolote arroyero de Michoacán
+                        </span>
+
+                        <h3>
+                            <em>
+                                Ambystoma rivulare
+                            </em>
+                        </h3>
+
+                        <p>
+                            Ajolote de arroyos y bosques de montaña
+                            vinculado a aguas corrientes.
+                        </p>
+
+                        <div class="meta">
+                            📍 Michoacán
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- 14 -->
+
+                <article
+                    class="species-card"
+                    data-name="Ajolote rosado tarahumara"
+                    data-scientific="Ambystoma rosaceum"
+                    data-habitat="mexico"
+                >
+
+                    <div class="image-wrap">
+
+                        <img
+                            data-wiki="Ambystoma rosaceum"
+                            alt="Ambystoma rosaceum"
+                        >
+
+                        <span class="number">
+                            14
+                        </span>
+
+                    </div>
+
+                    <div class="card-body">
+
+                        <span class="common">
+                            Ajolote rosado / tarahumara
+                        </span>
+
+                        <h3>
+                            <em>
+                                Ambystoma rosaceum
+                            </em>
+                        </h3>
+
+                        <p>
+                            Especie de zonas montañosas de la Sierra
+                            Madre Occidental.
+                        </p>
+
+                        <div class="meta">
+                            📍 Sierra Madre Occidental
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- 15 -->
+
+
+
+                <!-- 16 -->
+
+                <article
+                    class="species-card"
+                    data-name="Ajolote de Alchichica"
+                    data-scientific="Ambystoma taylori"
+                    data-habitat="lago mexico"
+                >
+
+                    <div class="image-wrap">
+
+                        <img
+                            data-wiki="Ambystoma taylori"
+                            alt="Ambystoma taylori"
+                        >
+
+                        <span class="number">
+                            16
+                        </span>
+
+                    </div>
+
+                    <div class="card-body">
+
+                        <span class="common">
+                            Ajolote de Alchichica
+                        </span>
+
+                        <h3>
+                            <em>
+                                Ambystoma taylori
+                            </em>
+                        </h3>
+
+                        <p>
+                            Especie acuática de distribución muy
+                            reducida, adaptada al ambiente del lago
+                            donde vive.
+                        </p>
+
+                        <div class="meta">
+                            📍 Lago Alchichica, Puebla
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- 17 -->
+
+                <article
+                    class="species-card"
+                    data-name="Ajolote del altiplano"
+                    data-scientific="Ambystoma velasci"
+                    data-habitat="lago mexico"
+                >
+
+                    <div class="image-wrap">
+
+                        <img
+                            data-wiki="Ambystoma velasci"
+                            alt="Ambystoma velasci"
+                        >
+
+                        <span class="number">
+                            17
+                        </span>
+
+                    </div>
+
+                    <div class="card-body">
+
+                        <span class="common">
+                            Ajolote del altiplano
+                        </span>
+
+                        <h3>
+                            <em>
+                                Ambystoma velasci
+                            </em>
+                        </h3>
+
+                        <p>
+                            Salamandra tigre mexicana distribuida
+                            en diferentes zonas del altiplano.
+                        </p>
+
+                        <div class="meta">
+                            📍 Altiplano mexicano
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+            </div>
+
+            <p
+                id="sinResultados"
+                class="sin-resultados"
+                hidden
+            >
+                🫧 No encontramos esa especie.
+            </p>
+
+        </section>
+
+
+
+        <!-- ================= DATOS ================= -->
+
+        <section id="datos" class="section curiosidades">
+
+            <div class="section-heading">
+
+                <span class="section-tag">
+                    ✨ CURIOSIDADES
+                </span>
+
+                <h2>
+                    Datos interesantes
+                </h2>
+
+            </div>
+
+
+            <div class="curiosity-grid">
+
+                <article>
+
+                    <span>
+                        🧬
+                    </span>
+
+                    <h3>
+                        Regeneración
+                    </h3>
+
+                    <p>
+                        El ajolote mexicano es famoso por su capacidad
+                        de regenerar diferentes estructuras corporales.
+                    </p>
+
+                </article>
+
+
+                <article>
+
+                    <span>
+                        🫧
+                    </span>
+
+                    <h3>
+                        Respiración
+                    </h3>
+
+                    <p>
+                        Los ajolotes pueden utilizar branquias, pulmones
+                        y también realizar intercambio gaseoso mediante
+                        la piel.
+                    </p>
+
+                </article>
+
+
+                <article>
+
+                    <span>
+                        💧
+                    </span>
+
+                    <h3>
+                        Vida acuática
+                    </h3>
+
+                    <p>
+                        Algunas especies están asociadas a lagos,
+                        mientras que otras viven en arroyos de montaña.
+                    </p>
+
+                </article>
+
+
+                <article>
+
+                    <span>
+                        🇲🇽
+                    </span>
+
+                    <h3>
+                        México
+                    </h3>
+
+                    <p>
+                        México posee una importante diversidad de
+                        especies del género Ambystoma.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-icon">
+            🦎
+        </div>
+
+        <h2>
+            El Mundo de los Ajolotes
+        </h2>
+
+        <p>
+            Proyecto educativo realizado con HTML, CSS y JavaScript.
+        </p>
+
+        <small>
+            Página informativa sobre especies del género Ambystoma.
+        </small>
+
+    </footer>
+
+
+    <!-- BOTON SUBIR -->
+
+    <button id="arribaBtn">
+        ↑
+    </button>
+
+</body>
+
+</html>
